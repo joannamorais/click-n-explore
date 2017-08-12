@@ -1,0 +1,326 @@
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html, body, .image {
+  height: 100%;
+}
+.image svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@keyframes running {
+  0% {
+    transform: translate(0%);
+  }
+  100% {
+    transform: translate(2000%);
+  }
+}
+
+#runner  {
+  /*transition: all 5s;*/
+  cursor: cell;
+}
+
+.run:hover {
+  animation-play-state: paused;
+}
+
+.run {
+  animation-name: running;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /*animation-delay: 3s;*/
+}
+
+.bright {
+  fill: rgb(253, 255, 175) !important;
+}
+
+.st13 {
+  cursor: cell;
+}
+
+@keyframes swinging {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-8deg);
+  }
+  75% {
+    transform: rotate(8deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.swinging {
+  animation-name: swinging;
+  animation-duration: 5s;
+  transform-origin: top;
+  animation-iteration-count: 2;
+}
+
+#swing, #duck2, #duck3, #duck4, #duck1 {
+  cursor: cell;
+}
+
+@keyframes spinning {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#wheel1:hover {
+  animation-name: spinning;
+  animation-duration: 5s;
+  transform-origin: center;
+}
+
+#wheel1, #wheel2, #bike {
+  cursor: cell;
+}
+
+@keyframes spinning2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+#wheel2:hover {
+  animation-name: spinning2;
+  animation-duration: 5s;
+  transform-origin: center;
+}
+
+.st7.st82.st83 {
+  cursor: cell;
+}
+
+@keyframes sunny {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 2;
+  }
+}
+
+#sun:hover {
+  animation-name: sunny;
+  animation-duration: 10s;
+}
+
+#sun, #cone, #boat, #door, #balloon {
+  cursor: cell;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0px);
+  }
+  25% {
+    transform: translate(-350px);
+  }
+  50% {
+    transform: translate(100px);
+  }
+  75% {
+    transform: translate(-50px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+.floating {
+  animation-name: float;
+  animation-duration: 10s;
+  transform-origin: center;
+}
+
+@keyframes meditate {
+  0% {
+    transform: translateY(0px);
+  }
+  15% {
+    transform: translateY(-25px);
+  }
+  30% {
+    transform: translateY(-8px);
+  }
+  45% {
+    transform: translateY(-25px);
+  }
+  60% {
+    transform: translateY(-8px);
+  }
+  85% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.meditating {
+  animation-name: meditate;
+  animation-duration: 6s;
+  transform-origin: top;
+}
+
+.st54, #yoga, #pond, #iceboy, #bird, #bottle, #fly, #scoop {
+  cursor: cell;
+}
+
+@keyframes sliding {
+  0% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(200px);
+  }
+}
+
+.slideIn {
+  animation-name: sliding;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes throwing {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-85px,-15px) rotate(90deg);
+  }
+  50% {
+    transform: translate(-170px,-15px) rotate(180deg);
+  }
+  75% {
+    transform: translate(-255px,-15px) rotate(270deg);
+  }
+  100% {
+    transform: translate(-320px, 0px) rotate(360deg);
+  }
+}
+
+.throwing {
+  animation-name: throwing;
+  animation-duration: 3s;
+  transform-origin: center;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flying {
+  0% {
+    transform: translate(-110%);
+  }
+  100% {
+    transform: translate(600%);
+  }
+}
+
+#fly {
+  animation-name: flying;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wavey1 {
+  0% {
+    transform: translateY(0px);
+  }
+  15% {
+    transform: translateY(1px);
+  }
+  30% {
+    transform: translateY(-3px);
+  }
+  45% {
+    transform: translateY(1px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+  85% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#bottomwave {
+  animation-name: wavey1;
+  animation-duration: 5s;
+  transform-origin: center;
+  animation-iteration-count: infinite;
+}
+
+#topwave {
+  animation-name: wavey1;
+  animation-duration: 6s;
+  transform-origin: center;
+  animation-iteration-count: infinite;
+}
+
+@keyframes birdie {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(250px, -5px);
+  }
+  100% {
+    transform: translate(325px, -25px);
+  }
+}
+
+.birdie {
+  animation-name: birdie;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+
+
+.scoop {
+  animation-name: scoop;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+}
+@keyframes scoop {
+    0% {
+      transform: translateY(0px);
+    }
+    20% {
+      transform: translateY(100px);
+    }
+    100% {
+      transform: translateY(100px) translateX(750px);
+    }
+}
