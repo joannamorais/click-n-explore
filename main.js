@@ -79,52 +79,52 @@ $('#scoop').click(function() {
 // sounds --------------------------------------
 
 $('#duck2').click(function() {
-    var duckNoise = new Audio('sounds/duck-quack2.wav');
+    var duckNoise = new Audio('duck-quack2.wav');
     duckNoise.play();
 });
 
 $('#duck1, #duck3, #duck4').click(function() {
-    var duckNoise2 = new Audio('sounds/duck-baby.wav');
+    var duckNoise2 = new Audio('duck-baby.wav');
     duckNoise2.play();
 });
 
 $('#bike').click(function() {
-    var bikeNoise = new Audio('sounds/bike.wav');
+    var bikeNoise = new Audio('bike.wav');
     bikeNoise.play();
 });
 
 $('#cone').click(function() {
-    var shopSong = new Audio('sounds/icecreamsong.wav');
+    var shopSong = new Audio('icecreamsong.wav');
     shopSong.play();
 });
 
 $('#boat').click(function() {
-    var choochoo = new Audio('sounds/boat.wav');
+    var choochoo = new Audio('boat.wav');
     choochoo.play();
 });
 
 $('#door').click(function() {
-    var doorbell = new Audio('sounds/doorbell-3.wav');
+    var doorbell = new Audio('doorbell-3.wav');
     doorbell.play();
 });
 
 $('#book').click(function() {
-    var pageNoise = new Audio('sounds/page-flip.wav');
+    var pageNoise = new Audio('page-flip.wav');
     pageNoise.play();
 });
 
 $('#pond').click(function() {
-    var splash = new Audio('sounds/splashing.wav');
+    var splash = new Audio('splashing.wav');
     splash.play();
 });
 
 $('#iceboy').click(function() {
-    var giggle = new Audio('sounds/kidlaugh.wav');
+    var giggle = new Audio('kidlaugh.wav');
     giggle.play();
 });
 
 $('#bird').click(function() {
-    var tweet = new Audio('sounds/tweet2.wav');
+    var tweet = new Audio('tweet2.wav');
     tweet.play();
 });
 
